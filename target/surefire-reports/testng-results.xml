@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="12803" started-at="2017-11-08T17:42:56Z" finished-at="2017-11-08T17:43:08Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="12803" started-at="2017-11-08T17:42:56Z" finished-at="2017-11-08T17:43:08Z">
+      <class name="APITest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:APITest@6b71769e]" name="setup" is-config="true" duration-ms="222" started-at="2017-11-08T19:42:56Z" finished-at="2017-11-08T19:42:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="checkJsonSchema()[pri:0, instance:APITest@6b71769e]" name="checkJsonSchema" duration-ms="7643" started-at="2017-11-08T19:42:56Z" finished-at="2017-11-08T19:43:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkJsonSchema -->
+        <test-method status="PASS" signature="checkResponseAndCountTest()[pri:0, instance:APITest@6b71769e]" name="checkResponseAndCountTest" duration-ms="356" started-at="2017-11-08T19:43:03Z" finished-at="2017-11-08T19:43:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseAndCountTest -->
+      </class> <!-- APITest -->
+      <class name="UITest">
+        <test-method status="PASS" signature="setupClass()[pri:0, instance:UITest@2752f6e2]" name="setupClass" is-config="true" duration-ms="1106" started-at="2017-11-08T19:43:04Z" finished-at="2017-11-08T19:43:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:UITest@2752f6e2]" name="setupTest" is-config="true" duration-ms="722" started-at="2017-11-08T19:43:05Z" finished-at="2017-11-08T19:43:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="getUIData()[pri:0, instance:UITest@2752f6e2]" name="getUIData" duration-ms="2674" started-at="2017-11-08T19:43:06Z" finished-at="2017-11-08T19:43:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUIData -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:UITest@2752f6e2]" name="teardown" is-config="true" duration-ms="68" started-at="2017-11-08T19:43:08Z" finished-at="2017-11-08T19:43:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- UITest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
