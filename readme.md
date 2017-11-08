@@ -3,6 +3,7 @@ Test site content with DB data comparing + test API response example
 
 ## Prerequisites
 * **JDK >= 1.8.0_131**;
+* **Apache Maven >= 3.3.9**
 
 ## Installation
 Install dependencies: 
