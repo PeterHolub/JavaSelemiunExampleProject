@@ -11,6 +11,9 @@ public class DBWorker {
 
     private Connection connection;
 
+    /**
+     * Establishing DB connection
+     */
     public DBWorker() {
         try {
             connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
@@ -19,6 +22,9 @@ public class DBWorker {
         }
     }
 
+    /**
+     * @return Connection connection
+     */
     public Connection getConnection() {
         return connection;
     }

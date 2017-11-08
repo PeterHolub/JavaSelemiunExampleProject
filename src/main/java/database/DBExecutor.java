@@ -10,18 +10,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DBExecutor {
-
     private DBWorker worker;
     private Statement statement;
 
     private final String GET_ALL_FROM_DEPARTMENT = "SELECT * FROM DEPARTMENT";
     private final String GET_ALL_FROM_EMPLOYEE = "SELECT * FROM EMPLOYEE";
 
+    /**
+     * @throws SQLException
+     */
     public DBExecutor() throws SQLException {
         worker = new DBWorker();
         statement = worker.getConnection().createStatement();
     }
 
+    /**
+     * Returns set of DB table "department" data
+     *
+     * @return ArrayList departmentsList
+     */
     public List<Department> getDataListFromDepartment() {
         List<Department> departmentsList = new ArrayList<Department>();
 
@@ -42,6 +49,11 @@ public class DBExecutor {
         return departmentsList;
     }
 
+    /**
+     * Returns set of DB table "employee" dat
+     *
+     * @return ArrayList employeesList
+     */
     public List<Employee> getDataListFromEmployee() {
         List<Employee> employeesList = new ArrayList<Employee>();
 

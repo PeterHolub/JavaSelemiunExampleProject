@@ -12,7 +12,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainTest {
+public class UITest {
 
     private WebDriver driver;
     private static final String BASE_URL = "http://benzoelectromoty.ga/qa/";
