@@ -13,15 +13,15 @@ mvn clean install
 
 ## Run 
 Run scripts:
-1. for ALL test execution
+1. for ALL tests execution
     ```
     mvn test
     ```
-2. for UI test execution
+2. for UI tests execution
     ```
     mvn test -Dgroups=ui
     ```
-3. for API test execution
+3. for API tests execution
     ```
     mvn test -Dgroups=api
     ```
