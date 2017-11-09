@@ -22,14 +22,14 @@ public class MainPage {
         PageFactory.initElements(driver, this);
     }
 
-    private int getNumberOfRowsInTableInteger() {
+    private int getNumberOfRowsInTable() {
         return this.tableRowsList.size();
     }
 
     public List<Employee> getEmployeesList() {
         List<Employee> employeesList = new ArrayList<Employee>();
 
-        for (int i = 0; i < this.getNumberOfRowsInTableInteger(); i++) {
+        for (int i = 0; i < this.getNumberOfRowsInTable(); i++) {
             List<WebElement> propsList = driver.findElements(By.xpath("/html/body/table/tbody/tr[" + i + "]/td"));
 
             if (propsList.size() == 5) {
