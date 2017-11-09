@@ -8,17 +8,26 @@ Test site content with DB data comparing + test API response example
 ## Installation
 Install dependencies: 
 ```
-mvn install
+mvn clean install
 ```
 
 ## Run 
-Run script for test execution:
-```
-mvn test
-```
+Run scripts:
+1. for ALL test execution
+    ```
+    mvn test
+    ```
+2. for UI test execution
+    ```
+    mvn test -Dgroups=ui
+    ```
+3. for API test execution
+    ```
+    mvn test -Dgroups=api
+    ```
 
 ## Structure
-* /src/main/java/database - DB utils
+* /src/main/java/database - DB utils, specifically, **DBWorker.java** for establishing DB connection
 * /src/main/java/model - models for describing DB tables
 * /src/main/java/pages - described pages according to page-object pattern
 
