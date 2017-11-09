@@ -10,13 +10,13 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainPageObject {
+public class MainPage {
     private WebDriver driver;
 
     @FindBy(xpath = "//tbody/tr")
     private List<WebElement> tableRowsList;
 
-    public MainPageObject(WebDriver driver) {
+    public MainPage(WebDriver driver) {
         this.driver = driver;
 
         PageFactory.initElements(driver, this);

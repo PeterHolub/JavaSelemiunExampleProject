@@ -3,9 +3,18 @@ package database;
 import java.sql.*;
 
 public class DBWorker {
-    private final String URL = "jdbc:mysql://188.166.161.108:3306/candidate";
+
+    /**
+     * Set data source details and credentials
+     */
+    private final String HOST = "188.166.161.108";
+    private final String PORT = "3306";
+    private final String DB = "candidate";
+    private final String DRIVER = "mysql";
     private final String USERNAME = "testcandidate";
     private final String PASSWORD = "Ej7mhonxAdHpNoNv";
+
+    private final String URL = "jdbc:" + DRIVER + "://" + HOST + ":" + PORT + "/" + DB;
 
     private Connection connection;
 

@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
-import pages.MainPageObject;
+import pages.MainPage;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -13,24 +13,24 @@ import java.util.List;
 public class UITest {
 
     private WebDriver driver;
-    private MainPageObject mainPage;
+    private MainPage mainPage;
     private static final String BASE_URL = "http://benzoelectromoty.ga/qa/";
 
-    @BeforeClass
+    @BeforeClass(groups = {"ui"})
     public static void setupClass() {
         ChromeDriverManager.getInstance().setup();
     }
 
-    @BeforeMethod
+    @BeforeMethod(groups = {"ui"})
     public void setupTest() {
         driver = new ChromeDriver();
     }
 
-    @Test
+    @Test(groups = {"ui"})
     public void getUIData() throws IllegalAccessException, SQLException {
         driver.get(BASE_URL);
 
-        mainPage = new MainPageObject(driver);
+        mainPage = new MainPage(driver);
         List<Employee> dBEmployeesList = new DBExecutor().getDataListFromEmployee();
         List<Employee> uIEmployeesList = mainPage.getEmployeesList();
 
@@ -43,7 +43,7 @@ public class UITest {
         }
     }
 
-    @AfterMethod
+    @AfterMethod(groups = {"ui"})
     public void teardown() {
         if (driver != null) {
             driver.quit();
