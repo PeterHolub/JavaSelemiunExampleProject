@@ -1,5 +1,5 @@
 # Java/Selenium Example Project
-Test site content with DB data comparing + test API response example
+Test API responses in .xml and .json formats example 
 
 ## Prerequisites
 * **JDK >= 1.8.0_131**;
